@@ -1,5 +1,3 @@
-import string
-
 def moin():
     return "".join([w[0] for w in ["morgens", "onaniere", "ich", "nicht"]])
 
