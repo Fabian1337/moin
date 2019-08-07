@@ -1,9 +1,9 @@
 ascii_moin = '''
-MMMM    MMMM  oOOOOOOOOOOo  III  NN     NN
-MM  MMMM  MM  oO        Oo       NNNN   NN
-MM   MM   MM  oO   oO   Oo  III  NN Nn  NN
-MM   MM   MM  oO        Oo  III  NN   N NN 
-MM        MM  oOOOOOOOOOOo  III  NN    NNN
+MMMM    MMMM  oOOOOOOOo  III   NN       NN
+MM  MMMM  MM  oO                Oo        NNN    NN
+MM     MM      MM  oO   oO        Oo  III   NN Nn  NN
+MM     MM      MM  oO                Oo  III   NN   N  NN 
+MM                  MM  oOOOOOOOo   III   NN     NNN
 '''
 
 def arrange_moin(arr):
