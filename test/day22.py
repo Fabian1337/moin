@@ -1,3 +1,4 @@
+#heute schauen wir uns an wie man bin in decimal umawndelt ( eigene funktion ) und wir benutzen iter :D
 def btt(binary):
     decimal = i = 0
     while binary != 0:
