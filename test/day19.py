@@ -16,10 +16,8 @@ class Maze:
         if self.moin_maze[x][y] == s:
             self.FOUND[s] = (x, y, self.steps)
             return True
-        elif self.moin_maze[x][y] == "|":
-            return False
-        elif self.moin_maze[x][y] == "X":
-            return False
+        elif self.moin_maze[x][y] == "|": return False
+        elif self.moin_maze[x][y] == "X": return False 
         self.moin_maze[x][y] = "X"
         self.steps += 1
 
@@ -32,10 +30,10 @@ class Maze:
         return False
 
 [Maze().search(0, 0, s) for s in list("moin")]
-def mu(l): return eval(str(l).replace(',', '*'))
+def mul(l): return eval(str(l).replace(',', '*'))
 
 def moin():
-    return "".join((chr((mu(Maze.FOUND["m"]) >> 2) - 16), chr((mu(Maze.FOUND["o"]) << 1) + (1 << 5) - 1), chr(Maze.FOUND["i"][1]*Maze.FOUND["i"][2]-Maze.FOUND["m"][2]), chr((Maze.FOUND["n"][0]**Maze.FOUND["m"][0] << 2)-18)))
+    return "".join((chr((mul(Maze.FOUND["m"]) >> 2) - 16), chr((mul(Maze.FOUND["o"]) << 1) + (1 << 5) - 1), chr(Maze.FOUND["i"][1]*Maze.FOUND["i"][2]-Maze.FOUND["m"][2]), chr((Maze.FOUND["n"][0]**Maze.FOUND["m"][0] << 2)-18)))
 
 if __name__ == "__main__":
     print(moin())
