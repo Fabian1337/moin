@@ -1,5 +1,5 @@
 #heute schauen wir uns an wie man bin in decimal umawndelt ( eigene funktion ) und wir benutzen iter :D
-def btt(binary):
+def btd(binary):
     decimal = i = 0
     while binary != 0:
         dec = binary % 10
@@ -10,7 +10,7 @@ def btt(binary):
 
 def moin():
     mi = iter([1101101, 1101111, 1101001, 1101110])
-    return "".join((chr(btt(next(mi))), chr(btt(next(mi))), chr(btt(next(mi))), chr(btt(next(mi)))))
+    return "".join((chr(btd(next(mi))), chr(btd(next(mi))), chr(btd(next(mi))), chr(btd(next(mi)))))
 
 if __name__ == "__main__":
     print(moin())
