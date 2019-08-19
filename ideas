@@ -1,0 +1,9 @@
+cm = "莫因"
+
+
+l1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+l2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l']
+
+n = 3
+
+l3 = [elem[(idx // n) % 2] for idx, elem in enumerate(zip(l1, l2))]
