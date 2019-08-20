@@ -7,3 +7,5 @@ l2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l']
 n = 3
 
 l3 = [elem[(idx // n) % 2] for idx, elem in enumerate(zip(l1, l2))]
+
+linked list / doubled lnked list
